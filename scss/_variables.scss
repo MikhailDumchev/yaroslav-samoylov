@@ -1,0 +1,24 @@
+$white: rgb(255, 255, 255);
+$darkBlue: rgb(28, 32, 37);
+$blue: rgb(48, 79, 254);
+$blueHover: rgb(39, 59, 173);
+$textColor: rgb(52, 54, 86);
+$red: rgb(192, 37, 98);
+$grey: rgb(241, 242, 249);
+$lightGrey: rgb(247, 248, 251);
+$footerGrey: rgb(119, 121, 124);
+$darkGrey: rgb(40, 43, 48);
+$achievementGrey: rgb(199, 200, 202);
+//Цвета задних фонов;
+$background: rgb(28, 32, 37);
+$backgroundTransparent: rgba(28, 32, 37, 0.95);
+$copyrightBackground: rgb(27, 30, 35);
+$darkBlueTransparent: rgba(28, 32, 37, 0.9);
+$fieldBackground: rgb(40, 43, 48);
+@mixin gradient() {
+    background: rgb(52,54,86);
+    background: -moz-linear-gradient(top, rgba(52,54,86,0.9) 0%, rgba(28,30,38,0.9) 100%);
+    background: -webkit-linear-gradient(top, rgba(52,54,86,0.9) 0%,rgba(28,30,38,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(52,54,86,0.9) 0%,rgba(28,30,38,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343656', endColorstr='#1c1e26',GradientType=0 );
+}

@@ -1,0 +1,46 @@
+/* 
+    Created on : 27.03.2018, 12:16:03
+    Author     : Mikhail Dumchev
+*/
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_module.scss";
+@import "_title.scss";
+@import "_animation.scss";
+.button {
+    &:not(.light) {
+        min-width: 270px;
+        background-color: $blue;
+        color: $white;
+        font-size: 18px;
+        padding: 19px 25px;
+        &:hover {
+            cursor: pointer;
+            background-color: $blueHover;
+            text-decoration: none;
+        }
+    }
+/*    &.light {
+        min-width: 170px;
+        border: 1px solid $blue;
+        color: $white;
+        font-size: 15px;
+        padding: 12px 25px;
+        &:hover {
+            cursor: pointer;
+            background-color: $blue;
+            text-decoration: none;
+        }
+    }*/
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 56px;
+    @include transition(all, 0.2s, ease);
+}
+@import "_achievements.scss";
+@import "_logotype.scss";
+@import "_header.scss";
+@import "_courses-list.scss";
+@import "_form.scss";
+@import "_footer.scss";
