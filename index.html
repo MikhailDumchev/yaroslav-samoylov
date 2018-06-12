@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
     <head>
         <title>Счастливые отношения глазами мужчин</title>
@@ -158,6 +158,20 @@
                 </div>
             </div>
         </div>
+        <div class="module with-map">
+            <div class="internal-module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="title">Девушки из 146 стран мира <span>находят ответы на свои вопросы</span></p>
+                        </div>
+                        <div class="col-md-12">
+                            <!--<div id="worldmap"></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="module with-achievements">
             <div class="internal-module">
                 <div class="container">
@@ -243,6 +257,41 @@
                 </div>
             </div>
         </div>
+        <div class="module with-opinions">
+            <div class="internal-module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="title">Вдохновляющие результаты <span>участниц наших программ</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="slider">
+                                <span class="slider-button left-button" data-step="-1"></span>
+                                <div class="slider-content">
+                                    <div class="opinion">
+                                        <div class="additory-module">
+                                            <p>«Ярослав дал четкие и подробные инструкции тому, что же такое «мужчина» и в чем секрет «применения». Самое важное, что можно услышать информацию из первых уст именно от мужчины. Я хожу на женские тренинги уже более двух лет, и женственность, платье – это хорошо, но важно узнать, чего же хотят мужчин от нас. Не то, что мы думаем, что им нужно. А то, что нужно им, чтоб быть счастливыми и делать счастливыми нас»</p>
+                                        </div>
+                                    </div>
+                                    <div class="opinion passive">
+                                        <div class="additory-module">
+                                        </div>
+                                    </div>
+                                    <div class="opinion passive">
+                                        <div class="additory-module">
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="slider-button right-button" data-step="1"></span>
+                                <div class="slider-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="with-form">
             <div class="background"></div>
             <div class="container">
@@ -262,6 +311,70 @@
                             <input type="email" name="email" placeholder="Введите email...">
                             <input type="submit" class="request-caller" value="">
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="module with-news">
+            <div class="internal-module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="title">Новые статьи в блоге</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#" class="news">
+                                <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                <div class="background"></div>
+                                <div class="additory-module">
+                                    <div>
+                                        <span class="tag">Любовь</span>
+                                    </div>
+                                    <p class="date">12 марта</p>
+                                    <h2>Нужно ли выяснять отношения?</h2>
+                                    <div class="with-animation">
+                                        <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                    </div>
+                                    <span class="course-button">Узнать о курсе</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="news">
+                                <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                <div class="background"></div>
+                                <div class="additory-module">
+                                    <div>
+                                        <span class="tag">Личное</span>
+                                    </div>
+                                    <p class="date">12 марта</p>
+                                    <h2>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h2>
+                                    <div class="with-animation">
+                                        <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                    </div>
+                                    <span class="course-button">Узнать о курсе</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="news">
+                                <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                <div class="background"></div>
+                                <div class="additory-module">
+                                    <div>
+                                        <span class="tag">Секс</span>
+                                    </div>
+                                    <p class="date">12 марта</p>
+                                    <h2>Почему муж избегает секса?</h2>
+                                    <div class="with-animation">
+                                        <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                    </div>
+                                    <span class="course-button">Узнать о курсе</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,5 +431,12 @@
                 </div>
             </div>
         </footer>
+        <script src="js/map.js"></script>
+        <script>
+            window.onload = function() {
+                "use strict";
+                //new WorldMap({element : 'worldmap', height : 600});
+            };
+        </script>
     </body>
 </html>
