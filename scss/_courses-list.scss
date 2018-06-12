@@ -16,6 +16,13 @@ $animationDuration: 0.2s;
             margin-bottom: 30px;
         }
         &:hover {
+            
+            img{
+                filter:grayscale(0%);
+            }
+            .background{
+                opacity:0.8;
+            }
             .additory-module {
                 .with-animation {
                     p {
@@ -27,7 +34,16 @@ $animationDuration: 0.2s;
                 .course-button {
                     background-color: $blue;
                 }
+                .free{
+                    height:auto !important;
+                    opacity:1 !important;
+                    width:auto !important;
+                    min-width:70px;
+                    padding:4px 8px !important;
+                    margin:0;
+                }
             }
+               
         }
         img {
             position: absolute;
@@ -46,6 +62,7 @@ $animationDuration: 0.2s;
             height: 100%;
             border-radius: 8px;
             @include gradient();
+            transition: all 1s;
         }
         .additory-module {
             position: relative;
@@ -66,6 +83,28 @@ $animationDuration: 0.2s;
                         padding: 4px 8px;
                         border-radius: 28px;
                         text-align: center;
+                        overflow: hidden;
+                       
+                        
+                        .green-dot{
+                            width: 5px;
+                            min-width: 5px;
+                            height: 5px;
+                            padding: 5px;
+                            background: #45ca37;
+                            margin-right: 5px;
+                        }
+                        &.free{
+                            background-color: #bc225e;
+                            color:white;
+                            transition:min-width,width,opacity .4s;
+                            height: 0;
+                            opacity: 0;
+                            width:0;
+                            min-width: 0;
+                            padding:0;
+                            margin: 0 10px 0 0;
+                        }
                     }
                 }
                 &.with-animation {

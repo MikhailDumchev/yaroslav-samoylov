@@ -2,9 +2,40 @@ header {
     position: relative;
     font-family: "Montserrat", sans-serif;
     padding-top: 104px;
-
     @include background-image('/header/ys-header.png',right,contain,$darkBlueTransparent);
+    
+    a{
+        color:#e5236a;
+    }
+    .container-fluid{
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        left: 0;
+        
+        .navbar{
+            .navbar-header{
+                margin-left:0;
+                margin-right:0;
+            }
 
+            .container-fluid{
+                width: 100%;
+                .navbar-nav>li>a{
+                    color:$white;
+                    background-color: inherit;
+                }
+                button{
+
+                    .icon-bar{
+                        background-color:$white;
+                    }
+
+                }
+            }
+        }
+    }
     .with-video {
         position: absolute;
         width: 100%;
