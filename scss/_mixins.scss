@@ -37,3 +37,11 @@
     @include css3-prefix('box-shadow', $x $y $blur $stretching $color);
   }
 }
+
+@mixin background-image($img, $background-position, $size, $background-color) {
+    background-image: url('#{$path--rel}/#{$img}');
+    background-repeat: no-repeat;
+    background-position: $background-position;
+    background-size: $size;
+    background-color: $background-color ;
+} 

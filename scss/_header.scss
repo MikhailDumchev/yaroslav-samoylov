@@ -2,7 +2,9 @@ header {
     position: relative;
     font-family: "Montserrat", sans-serif;
     padding-top: 104px;
-    background-color: $darkBlueTransparent;
+
+    @include background-image('/header/ys-header.png',right,contain,$darkBlueTransparent);
+
     .with-video {
         position: absolute;
         width: 100%;
