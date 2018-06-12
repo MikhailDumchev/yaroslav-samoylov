@@ -1,0 +1,128 @@
+$animationDelay: 0.3s;
+$animationDuration: 0.2s;
+.courses-list {
+    background-color: $grey;
+    font-family: "Montserrat", sans-serif;
+    .course {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 490px;
+        padding: 32px;
+        border-radius: 8px;
+        overflow: hidden;
+        text-decoration: none;
+        &:nth-child(-n+3) {
+            margin-bottom: 30px;
+        }
+        &:hover {
+            .additory-module {
+                .with-animation {
+                    p {
+                        @include transition(height $animationDuration ease-out, opacity $animationDuration ease-out $animationDelay);
+                        height: 50px;
+                        opacity: 1;
+                    }
+                }
+                .course-button {
+                    background-color: $blue;
+                }
+            }
+        }
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        .background {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            @include gradient();
+        }
+        .additory-module {
+            position: relative;
+            display: table-cell;
+            vertical-align: bottom;
+            z-index: 1;
+            div {
+                &:not([class]) {
+                    position: absolute;
+                    top: 0px;
+                    span {
+                        display: inline-block;
+                        min-width: 86px;
+                        color: $textColor;
+                        font-size: 15px;
+                        font-weight: 500;
+                        background-color: $white;
+                        padding: 4px 8px;
+                        border-radius: 28px;
+                        text-align: center;
+                    }
+                }
+                &.with-animation {
+                    overflow: hidden;
+                    p {
+                        @include transition(height $animationDuration ease-out $animationDelay, opacity $animationDuration ease-out);
+                        height: 0px;
+                        margin: 0px auto;
+                        opacity: 0;
+                    }
+                }
+            }
+            p {
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+                &.date {
+                    background-position: 0% 50%;
+                    background-repeat: no-repeat;
+                    background-image: url("../img/calendar.svg");
+                    background-size: auto 16px;
+                    padding-left: 24px;
+                    margin: 0px auto 15px;
+                }
+                span {
+                    display: inline-block;
+                    background-color: $blue;
+                    color: $white;
+                    padding: 3px 4px;
+                    border-radius: 4px;
+                    &:not(:last-of-type) {
+                        margin-right: 3px;
+                    }
+                    &:first-of-type {
+                        margin-left: 8px;
+                    }
+                }
+            }
+            h2 {
+                color: $white;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.3;
+                margin: 0px auto 20px;
+            }
+            .course-button {
+                display: inline-block;
+                font-weight: 500;
+                text-align: center;
+                border-radius: 56px;
+                min-width: 170px;
+                border: 1px solid $blue;
+                color: $white;
+                font-size: 15px;
+                padding: 12px 25px;
+                @include transition(all $animationDuration ease);
+            }
+        }
+    }
+}

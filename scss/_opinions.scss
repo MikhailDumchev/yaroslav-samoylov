@@ -1,0 +1,94 @@
+.with-opinions {
+    .opinion {
+        background-color: $white;
+        padding: 48px 90px;
+        p {
+            font-size: 16px;
+            margin: 0px auto;
+        }
+    }
+}
+/*.slider {
+    position: relative;
+    .slider-content {
+        position: relative;
+        height: 418px;
+        overflow: hidden;
+        .opinion {
+            display: table;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            .additory-module {
+                display: table-cell;
+                height: 418px;
+                vertical-align: middle;
+            }
+            &.passive {
+                display: none;
+            }
+        }
+    }
+    .slider-pagination {
+        margin: 20px auto;
+        text-align: center;
+        div {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            margin: 0px 5px;
+            @include transition(background-color, 0.2s, ease);
+            &.active {
+                background-color: $red;
+            }
+            &:not(.active) {
+                background-color: $lightGrey;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        fill: $red;
+        z-index: 10;
+        border-radius: 100%;
+        @include transition(background-color, 0.2s, ease-in-out);
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(198, 57, 80);
+        }
+        background-position: 60% 50%;
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-image: url("../img/slider-arrow.svg");
+        background-color: rgba(41, 43, 66, 1);
+    }
+}
+@media screen and (max-device-width: 720px) {
+    .slider-content {
+        margin: 0px 40px;
+    }
+    .left-button {
+        left: 0px;
+        transform: rotate(180deg);
+    }
+    .right-button {
+        right: 0px;
+    }
+}
+@media screen and (min-device-width: 721px) {
+    .left-button {
+        left: -55px;
+        transform: rotate(180deg);
+    }
+    .right-button {
+        right: -55px;
+    }
+}*/

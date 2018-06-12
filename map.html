@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            svg .active {
+                fill: blue;
+            }
+            svg .active:hover {
+                fill: red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="output"></div>
+            <script src="js/basic-functions.js"></script>
+            <script src="js/world-map.js"></script>
+        <script>
+            window.onload = function() {
+                var map = new Map();
+                map.initialize(document.getElementById("output"));
+//                var result = new Array();
+//                var target = document.getElementById("target");
+//                var element = new Object();
+//                var className = "";
+//                for (var counter = 0; counter < target.getElementsByTagName("path").length; counter++) {
+//                    element = target.getElementsByTagName("path")[counter];
+//                    if (element.getAttribute("class") === "st0") {
+//                        className = "inactive";
+//                    } else {
+//                        className = "active";
+//                    }
+//                    document.getElementById("output").insertAdjacentHTML("beforeend", "countries[" + counter + "]={\"path\":\"" + element.getAttribute("d") + "\",\"class\":\"" + className + "\"};<br>");
+//                }
+            };
+        </script>
+    </body>
+</html>

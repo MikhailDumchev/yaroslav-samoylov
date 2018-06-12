@@ -1,0 +1,10 @@
+.module {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    .internal-module {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 30px 0px;
+    }
+}

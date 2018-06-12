@@ -1,0 +1,18 @@
+.news {
+    height: 530px;
+    .additory-module {
+        div {
+            .tag {
+                display: inline-block;
+                min-width: 86px;
+                color: $textColor;
+                font-size: 15px;
+                font-weight: 500;
+                background-color: $white;
+                padding: 4px 8px;
+                border-radius: 28px;
+                text-align: center;
+            }
+        }
+    }
+}
