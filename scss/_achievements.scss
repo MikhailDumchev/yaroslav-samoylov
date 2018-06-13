@@ -1,4 +1,5 @@
 .with-achievements {
+    background-color: #f1f2f9;
     .achievement {
         &:nth-child(-n+3) {
             margin-bottom: 30px;
@@ -6,15 +7,16 @@
         position: relative;
         overflow: hidden;
         border-radius: 8px;
+        height: 296px;
         .additory-module {
             display: table;
             width: 100%;
+            position: absolute;
             @include gradient();
             div {
-                display: table-cell;
                 height: 296px;
-                vertical-align: middle;
                 text-align: center;
+                padding-top: 50px;
                 img {
                     width: 40px;
                     height: 40px;
@@ -38,12 +40,11 @@
                 }
             }
         }
-        .background {
-            position: absolute;
+        .background {      
             height: 100%;
             top: 0px;
             left: 0px;
-            z-index: -1;
+            z-index: 0;
         }
     }
 }

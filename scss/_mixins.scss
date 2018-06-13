@@ -38,7 +38,7 @@
   }
 }
 
-@mixin background-image($img, $background-position, $size, $background-color) {
+@mixin background-image($img, $background-position, $size, $background-color:transparent) {
     background-image: url('#{$path--rel}/#{$img}');
     background-repeat: no-repeat;
     background-position: $background-position;

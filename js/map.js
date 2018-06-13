@@ -478,22 +478,22 @@ function WorldMap(options) {
 
     var svg = document.createElementNS(svgNS, "svg:svg");
 
-    if (options['width'] == undefined)
+    if (options['width'] === undefined)
         options['width'] = 320;
-    if (options['height'] == undefined)
+    if (options['height'] === undefined)
         options['height'] = 240;
 
     var top = 0;
-    if (options["top"] != undefined)
+    if (options["top"] !== undefined)
         top = (options['height'] * options['top'] / 100);
     var left = 0;
-    if (options["left"] != undefined)
+    if (options["left"] !== undefined)
         left = (options['width'] * options['left'] / 100);
     var right = 0;
-    if (options["right"] != undefined)
+    if (options["right"] !== undefined)
         right = (options['width'] * options['right'] / 100);
     var bottom = 0;
-    if (options["bottom"] != undefined)
+    if (options["bottom"] !== undefined)
         bottom = (options['height'] * options['bottom'] / 100);
     var width = options['width'] + left + right;
     var height = options['height'] + top + bottom;
@@ -504,7 +504,8 @@ function WorldMap(options) {
     //svg.setAttributeNS(null, 'width', options['width']);
     svg.setAttributeNS(null, 'height', options['height']);
     svg.setAttributeNS(null, 'viewbox', "0 0 500 500");
-
+    
+    var k, k1;
     for (k in s) {
         var g = document.createElementNS(svgNS, 'g');
         g.setAttributeNS(null, 'id', 'g' + k);
@@ -514,10 +515,10 @@ function WorldMap(options) {
             g.setAttributeNS(null, 'onmouseover', options['overhandler'] + '(\'' + k + '\')');
         if (options['outhandler'])
             g.setAttributeNS(null, 'onmouseout', options['outhandler'] + '(\'' + k + '\')');
-        if (options['c'] == undefined)
+        if (options['c'] === undefined)
             g.className.baseVal = 'worldmap';
         else {
-            if (options['c'][k] == undefined)
+            if (options['c'][k] === undefined)
                 g.className.baseVal = 'worldmap';
             else
                 g.className.baseVal = 'worldmap_' + options['c'][k];
@@ -545,9 +546,9 @@ function WorldMap(options) {
         svg.appendChild(g);
     }
 
-    if (options['element'] != undefined) {
+    if (options['element'] !== undefined) {
         var parent = document.getElementById(options['element']);
         if (parent)
-            parent.appendChild(svg)
+            parent.appendChild(svg);
     }
 }

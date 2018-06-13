@@ -22,19 +22,31 @@ header {
 
             .container-fluid{
                 width: 100%;
-                .navbar-nav>li>a{
-                    color:$white;
-                    background-color: inherit;
-                }
-                button{
-
-                    .icon-bar{
-                        background-color:$white;
+                .navbar-header{
+                    button{
+                        .icon-bar{
+                            background-color:$white;
+                        }
                     }
-
+                }
+                #navbar{
+                    @media ($mob-width){
+                        &{
+                            background: rgba(35, 37, 43, 0.95);
+                        }
+                    }
+                    .navbar-nav>li{
+                        text-align:center;
+                        &>a{
+                            color:$white;
+                            background-color: inherit;
+                        }
+                    }
                 }
             }
+
         }
+        
     }
     .with-video {
         position: absolute;

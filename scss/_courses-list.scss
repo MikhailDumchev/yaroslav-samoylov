@@ -122,12 +122,10 @@ $animationDuration: 0.2s;
                 font-size: 16px;
                 font-weight: 500;
                 &.date {
-                    background-position: 0% 50%;
-                    background-repeat: no-repeat;
-                    background-image: url("../img/calendar.svg");
-                    background-size: auto 16px;
+                    @include background-image('calendar.svg', 0% 50%, auto 16px);
                     padding-left: 24px;
                     margin: 0px auto 15px;
+                    font-weight:200;
                 }
                 span {
                     display: inline-block;
