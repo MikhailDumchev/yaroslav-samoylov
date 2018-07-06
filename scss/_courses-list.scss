@@ -7,7 +7,7 @@ $animationDuration: 0.2s;
         position: relative;
         display: table;
         width: 100%;
-        height: 490px;
+        height: 475px;
         padding: 32px;
         border-radius: 8px;
         overflow: hidden;
@@ -24,6 +24,11 @@ $animationDuration: 0.2s;
                 opacity:0.8;
             }
             .additory-module {
+                .tag{
+                    &:not(free){
+                        
+                    }
+                }
                 .with-animation {
                     p {
                         @include transition(height $animationDuration ease-out, opacity $animationDuration ease-out $animationDelay);
@@ -50,7 +55,7 @@ $animationDuration: 0.2s;
             top: 0px;
             left: 0px;
             width: 100%;
-            height: 100%;
+            /*height: 100%;*/
             -webkit-filter: grayscale(1);
             filter: grayscale(1);
         }
@@ -73,7 +78,7 @@ $animationDuration: 0.2s;
                 &:not([class]) {
                     position: absolute;
                     top: 0px;
-                    span {
+                    .tag{
                         display: inline-block;
                         min-width: 86px;
                         color: $textColor;
@@ -84,15 +89,18 @@ $animationDuration: 0.2s;
                         border-radius: 28px;
                         text-align: center;
                         overflow: hidden;
-                       
-                        
-                        .green-dot{
-                            width: 5px;
-                            min-width: 5px;
-                            height: 5px;
-                            padding: 5px;
-                            background: #45ca37;
-                            margin-right: 5px;
+                        &:not(.free){
+                            &:before{
+                                content:'';
+                                width: 5px;
+                                min-width: 5px;
+                                height: 5px;
+                                padding: 5px;
+                                background: #45ca37;
+                                margin-right: 5px;
+                                display: inline-block;
+                                border-radius: 100%;
+                            }
                         }
                         &.free{
                             background-color: #bc225e;

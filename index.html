@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <script src="js/jquery-3.0.0.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery-jvectormap-2.0.3.min.js" ></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css">
     </head>
@@ -32,9 +34,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <p><span>Бесплатный</span> онлайн-курс</p>
+                            <p style="letter-spacing: 2.8px;"><span>Бесплатный</span> онлайн-курс</p>
                             <h1>Счастливые отношения глазами мужчин</h1>
-                            <ul>
+                            <ul class="font-thin">
                                 <li>Знакомства: где, как, с кем?</li>
                                 <li>Секреты крепких отношений</li>
                                 <li>Состояние "хочу-получаю"</li>
@@ -432,9 +434,19 @@
                             <p class="title">Новые статьи в блоге</p>
                         </div>
                     </div>
-                    <div id="myCarousel" class=" mobile-nav carousel slide" data-interval="false" data-ride="carousel" style="height: 50px;">
- 
-                        <!-- Wrapper for slides -->
+                    <div id="myCarousel" class=" mobile-nav carousel slide" data-interval="false" data-ride="carousel" >
+                        <!-- Desktop navs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#all">ВСЕ</a></li>
+                            <li><a data-toggle="tab" href="#love">ЛЮБОВЬ</a></li>
+                            <li><a data-toggle="tab" href="#sex">СЕКС</a></li>
+                            <li><a data-toggle="tab" href="#psych">психология отношений</a></li>
+                            <li><a data-toggle="tab" href="#appear">Внешность</a></li>
+                            <li><a data-toggle="tab" href="#private">Личное</a></li>
+                            <li><a data-toggle="tab" href="#meets">Знакомства</a></li>
+                        </ul>
+                        
+                        <!-- Mobile Wrapper for slides -->
                         <div class="cat-navigation carousel-inner" style="text-align: center;">
                             <div class="item active">
                                 <a href="#" >Все</a>
@@ -465,61 +477,126 @@
                         <a class="right carousel-control" href="#myCarousel" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="#" class="news">
-                                <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
-                                <div class="background"></div>
-                                <div class="additory-module">
-                                    <div>
-                                        <span class="tag">Любовь</span>
+                        
+                        <div class="tab-content">
+                            
+                            <div id="all" class="tab-pane fade in active">
+                                <div class="row carousel-inner">
+                                    <div class="col-md-4">
+                                        <a href="#" class="news">
+                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                            <div class="background"></div>
+                                            <div class="additory-module">
+                                                <div>
+                                                    <span class="tag">Любовь</span>
+                                                </div>
+                                                <p class="date">12 марта</p>
+                                                <h2>Нужно ли выяснять отношения?</h2>
+                                                <div class="with-animation">
+                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                                </div>
+                                                <span class="course-button">Узнать о курсе</span>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <p class="date">12 марта</p>
-                                    <h2>Нужно ли выяснять отношения?</h2>
-                                    <div class="with-animation">
-                                        <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                    <div class="col-md-4">
+                                        <a href="#" class="news">
+                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                            <div class="background"></div>
+                                            <div class="additory-module">
+                                                <div>
+                                                    <span class="tag">Личное</span>
+                                                </div>
+                                                <p class="date">12 марта</p>
+                                                <h2>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h2>
+                                                <div class="with-animation">
+                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                                </div>
+                                                <span class="course-button">Узнать о курсе</span>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <span class="course-button">Узнать о курсе</span>
+                                    <div class="col-md-4">
+                                        <a href="#" class="news">
+                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                            <div class="background"></div>
+                                            <div class="additory-module">
+                                                <div>
+                                                    <span class="tag">Секс</span>
+                                                </div>
+                                                <p class="date">12 марта</p>
+                                                <h2>Почему муж избегает секса?</h2>
+                                                <div class="with-animation">
+                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                                </div>
+                                                <span class="course-button">Узнать о курсе</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="news">
-                                <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
-                                <div class="background"></div>
-                                <div class="additory-module">
-                                    <div>
-                                        <span class="tag">Личное</span>
+                            </div><!--first-tab--> 
+                        
+                            <!--Second tab-->
+                            <div id="love" class="tab-pane fade">
+                                <div class="row carousel-inner">
+                                    <div class="col-md-4">
+                                        <a href="#" class="news">
+                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                            <div class="background"></div>
+                                            <div class="additory-module">
+                                                <div>
+                                                    <span class="tag">Любовь</span>
+                                                </div>
+                                                <p class="date">12 марта</p>
+                                                <h2>Нужно ли выяснять отношения?</h2>
+                                                <div class="with-animation">
+                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                                </div>
+                                                <span class="course-button">Узнать о курсе</span>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <p class="date">12 марта</p>
-                                    <h2>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h2>
-                                    <div class="with-animation">
-                                        <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                    <div class="col-md-4">
+                                        <a href="#" class="news">
+                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                            <div class="background"></div>
+                                            <div class="additory-module">
+                                                <div>
+                                                    <span class="tag">Личное</span>
+                                                </div>
+                                                <p class="date">12 марта</p>
+                                                <h2>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h2>
+                                                <div class="with-animation">
+                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                                </div>
+                                                <span class="course-button">Узнать о курсе</span>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <span class="course-button">Узнать о курсе</span>
+                                    <div class="col-md-4">
+                                        <a href="#" class="news">
+                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
+                                            <div class="background"></div>
+                                            <div class="additory-module">
+                                                <div>
+                                                    <span class="tag">Секс</span>
+                                                </div>
+                                                <p class="date">12 марта</p>
+                                                <h2>Почему муж избегает секса?</h2>
+                                                <div class="with-animation">
+                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+                                                </div>
+                                                <span class="course-button">Узнать о курсе</span>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="news">
-                                <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
-                                <div class="background"></div>
-                                <div class="additory-module">
-                                    <div>
-                                        <span class="tag">Секс</span>
-                                    </div>
-                                    <p class="date">12 марта</p>
-                                    <h2>Почему муж избегает секса?</h2>
-                                    <div class="with-animation">
-                                        <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
-                                    </div>
-                                    <span class="course-button">Узнать о курсе</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                            </div><!--first-tab-->
+                        
+                        
+                        </div><!--tab content-->
+                    </div><!--Slider-->
+
                 </div>
             </div>
         </div>
@@ -576,12 +653,13 @@
             </div>
         </footer>
         <script src="js/slider2.js"></script>
-        <script src="js/map.js"></script>
-        
+        <!--<script src="js/map.js"></script>-->
+        <script src="js/jquery-jvectormap-2.0.3.min"></script>
         <script>
             window.onload = function() {
-                "use strict";
-                new WorldMap({element : 'worldmap', height : 600});
+//                "use strict";
+//                new WorldMap({element : 'worldmap', height : 600});
+                 jQuery('#worldmap').vectorMap({map: 'africa_mill'});  
                 new Slider();
             };
         </script>

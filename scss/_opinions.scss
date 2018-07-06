@@ -2,7 +2,6 @@
     .slider{
         .display{
             height: 300px;
-      
             padding: 30px;
         }
         .arrow{
@@ -36,16 +35,15 @@
             &:not(.active){
                 visibility: hidden;
                 opacity: 0;
-                transform: translate(200%);
+                @include transform(translate(200%));
                 width:0;
                 height:0;
                 padding:0;
             }
-            &.active{
-                
+            &.active{ 
                 visibility: visible;
                 opacity: 1;
-                transform: translate(0%);
+                @include transform(translate(0%));
                 width:100%;
                 height:auto;
             }

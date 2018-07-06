@@ -2,12 +2,39 @@
     Created on : 27.03.2018, 12:16:03
     Author     : Mikhail Dumchev
 */
+@font-face {
+    font-family: MontserratRegular;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+
+.font-thin{
+    font-family: MontserratRegular;
+}
+.font-extraBold{
+    font-family: MontserratExtraBold;
+}
+.font-bold{
+    font-family: MontserratBold;
+}
 @import "_mixins.scss";
 @import "_variables.scss";
 @import "_module.scss";
 @import "_title.scss";
 @import "_animation.scss";
 .button {
+    
     &:not(.light) {
         min-width: 270px;
         background-color: $blue;
@@ -18,6 +45,7 @@
             cursor: pointer;
             background-color: $blueHover;
             text-decoration: none;
+            @include transition(all .4s ease-in-out);
         }
     }
 /*    &.light {
@@ -38,6 +66,8 @@
     border-radius: 56px;
     @include transition(all, 0.2s, ease);
 }
+h1,h2{font-family: $text-bolder !important}
+
 @import "_achievements.scss";
 @import "_logotype.scss";
 @import "_header.scss";

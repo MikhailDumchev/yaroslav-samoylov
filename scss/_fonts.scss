@@ -1,1 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&subset=cyrillic');
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url("../fonts/Montserrat-ExtraBold.ttf");
+}
+
+.font-thin{
+    font-family: MontserratRegular;
+}

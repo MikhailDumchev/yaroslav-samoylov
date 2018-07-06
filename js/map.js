@@ -479,7 +479,7 @@ function WorldMap(options) {
     var svg = document.createElementNS(svgNS, "svg:svg");
 
     if (options['width'] === undefined)
-        options['width'] = 320;
+        options['width'] = 820;
     if (options['height'] === undefined)
         options['height'] = 240;
 
@@ -501,7 +501,7 @@ function WorldMap(options) {
     var kw = width / 9999;
     var kh = height / 9999;
 
-    //svg.setAttributeNS(null, 'width', options['width']);
+    svg.setAttributeNS(null, 'width', options['width']);
     svg.setAttributeNS(null, 'height', options['height']);
     svg.setAttributeNS(null, 'viewbox', "0 0 500 500");
     
