@@ -74,6 +74,12 @@ $animationDuration: 0.2s;
             display: table-cell;
             vertical-align: bottom;
             z-index: 1;
+            .course-title{
+                font-family: MontserratBold;
+                color:white;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
             div {
                 &:not([class]) {
                     position: absolute;

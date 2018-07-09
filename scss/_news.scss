@@ -1,30 +1,124 @@
 .with-news{
-    .mobile-nav{
-        .item{ 
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
-            a{
-                color: #acadc2 ;
+    background-color: #f1f2f9;
+    .container{
+        #myCarousel{
+            .mobile-cat-navigation{
+                
             }
-        }
-    }
-    .news {
-        height: 530px;
-        .additory-module {
-            div {
-                .tag {
-                    display: inline-block;
-                    min-width: 86px;
-                    color: $textColor;
-                    font-size: 15px;
-                    font-weight: 500;
-                    background-color: $white;
-                    padding: 4px 8px;
-                    border-radius: 28px;
-                    text-align: center;
+            .carousel-controls{
+                position: absolute;
+                top: 0;
+                width: 15%;
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                text-shadow: 0 1px 2px rgba(0,0,0,.6);
+                background-color: rgba(0,0,0,0);
+                filter: alpha(opacity=50);
+                opacity: .5;
+                &.left{
+                    left: 0;
+                }
+                &.right{
+                    right: 0;
+                }
+            }
+            .nav-tab{
+                display: table;
+                margin: auto;
+                & > li{
+                    float:left;
+                    &.active{
+                        a{
+                            color: #343656;
+                            font-weight: bold;
+                        }
+                    }
+                    a{
+                        color: #acadc2;
+                        text-transform: uppercase;
+                        &:focus, &:hover {
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            .cat-navigation{
+                .item{ 
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    a{
+                        color: #acadc2 ;
+                    }
+                }
+            }
+            .tab-content{
+                margin:40px auto;
+                .tab-pane{
+                    .news {
+                        background: white;
+                        display: block;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        .background{
+                            background-image: linear-gradient(to top, #1c1e26 0%, #343656 99%, #343656 100%);
+                            opacity: 0.85;
+                            position:absolute;
+                            top:0;left:0;right:0;bottom:0;
+                        }
+                        .thumb{
+                            position:relative;
+                            height: 300px;
+                            background-repeat: no-repeat;
+                            background-position: top center;
+                            background-size: cover;
+                            -webkit-filter: grayscale(1);
+                            filter: grayscale(1);
+                            @include transition(filter .5s ease-in-out);
+                            &:hover{
+                                filter: grayscale(0);
+                            }
+                            .category{
+                                position: absolute;
+                                top:30px;
+                                display: inline-block;
+                                margin: auto;
+                                color:white;
+                                text-transform: uppercase;
+                                right: 0;
+                                left: 0;
+                                text-align: center;
+                            }
+                        }
+                        height: 530px;
+                        .additory-module {
+                            padding:20px;
+                            h3{
+                                color: #343656;
+                                font-family: Montserrat;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 32px; 
+                            }
+                            div {
+                                .tag {
+                                    display: inline-block;
+                                    min-width: 86px;
+                                    color: $textColor;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    background-color: $white;
+                                    padding: 4px 8px;
+                                    border-radius: 28px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
+        
     }
 }
