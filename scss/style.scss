@@ -67,6 +67,9 @@
     @include transition(all, 0.2s, ease);
 }
 h1,h2{font-family: $text-bolder !important}
+a:focus, a:hover {
+    text-decoration: none !important;
+}
 
 @import "_achievements.scss";
 @import "_logotype.scss";

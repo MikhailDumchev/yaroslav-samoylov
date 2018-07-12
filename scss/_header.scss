@@ -2,7 +2,7 @@ header {
     position: relative;
     font-family: "Montserrat", sans-serif;
     padding-top: 104px;
-    @include background-image('/header/ys-header.png',right,contain,$darkBlueTransparent);
+    @include background-image('/header/ys-header.png',right bottom,65%,$darkBlueTransparent);
     
     a{
         color:#e5236a;

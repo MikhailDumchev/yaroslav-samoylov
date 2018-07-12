@@ -95,7 +95,7 @@ $animationDuration: 0.2s;
                         border-radius: 28px;
                         text-align: center;
                         overflow: hidden;
-                        &:not(.free){
+                        &:not(.free):not(.private){ 
                             &:before{
                                 content:'';
                                 width: 5px;

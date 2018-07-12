@@ -2,6 +2,45 @@ footer {
     background-color: $background;
     .with-margin {
         margin: 30px auto;
+        .socials{
+            li{
+                
+                &:not(:first-of-type){
+                    margin-left: 35px;
+                }
+                &:not(:first-of-type):before{
+                    content:"";
+                    width:20px;
+                    height:30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    display: block;
+                    position: absolute;
+                    left: 15px;
+                    margin-top: -4px;
+                }
+                &.twitter:before{
+                    background-image: url(../img/icons/twitter.svg);
+                }
+                 &.fb:before{
+                    background-image: url(../img/icons/fb.svg);
+                }
+                 &.insta:before{
+                    background-image: url(../img/icons/instagram.svg);
+                }
+                 &.youtube:before{
+                    background-image: url(../img/icons/youtube.svg);
+                }
+                &.telegram:before{
+                    background-image: url(../img/icons/telegram.svg);
+                }
+                &.vk:before{
+                    background-image: url(../img/icons/vk.svg);
+                }
+               
+            }
+        }
     }
     ul {
         list-style-type: none;
@@ -49,7 +88,8 @@ footer {
         &.internal-title {
             color: $white;
             text-transform: uppercase;
-            margin: 0px auto 25px;
+            margin: 0px auto 10px;
+            padding: 8px 0;
         }
         &:not([class]) {
             color: $footerGrey;
