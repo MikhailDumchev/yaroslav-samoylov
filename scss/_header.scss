@@ -2,10 +2,10 @@ header {
     position: relative;
     font-family: "Montserrat", sans-serif;
     padding-top: 104px;
-    @include background-image('/header/ys-header.png',right bottom,65%,$darkBlueTransparent);
+    @include background-image('/header/ys-header.png',right bottom,contain,$darkBlueTransparent);
     
     a{
-        color:#e5236a;
+        color:$textColor;
     }
     .container-fluid{
         position: absolute;
@@ -13,14 +13,21 @@ header {
         margin: auto;
         right: 0;
         left: 0;
+        background-color: #f7f8fb;
         
         .navbar{
+            margin-top: 20px;
             .navbar-header{
                 margin-left:0;
                 margin-right:0;
+                .navbar-toggle{
+                    .icon-bar {
+                        background: #a8aaba;
+                    }
+                }
             }
 
-            .container-fluid{
+/*            .container-fluid{
                 width: 100%;
                 .navbar-header{
                     button{
@@ -38,12 +45,12 @@ header {
                     .navbar-nav>li{
                         text-align:center;
                         &>a{
-                            color:$white;
+                            
                             background-color: inherit;
                         }
                     }
                 }
-            }
+            }*/
 
         }
         
@@ -82,7 +89,7 @@ header {
             color: $red;
         }
     }
-    ul {
+    ul{
         list-style-type: none;
         padding: 0px;
         margin: 0px auto 50px;
@@ -102,13 +109,34 @@ header {
                 width: 6px;
                 height: 6px;
                 border-radius: 100%;
-                background-color: $red;
+                
             }
             &:not(:last-of-type) {
                 margin: 0px auto 5px;
             }
             &:last-of-type {
                 margin: 0px auto;
+            }
+        }
+        &.font-thin{
+            li{
+                &:before{
+                    background-color: $red;
+                }
+            }
+        }
+        &.navbar-nav:not(.social-nav){
+            li{
+                padding: 0 8px;
+                &:before{
+                    width: 3px;
+                    height: 3px;
+                    background-color: #b5b5bb;
+                }
+                &:first-of-type:before{
+                    width: 0px;
+                    height: px;
+                }
             }
         }
     }

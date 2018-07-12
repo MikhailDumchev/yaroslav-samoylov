@@ -10,6 +10,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet">
         <script src="js/jquery-jvectormap-2.0.3.min.js" ></script>
+        <script src="http://localhost:8383/yaroslav-samoylov/public/js/jquery-jvectormap-2.0.3.min"></script>
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css">
     </head>
@@ -47,7 +49,7 @@
                 </div>
                 <div class="container-fluid">
                     <nav class="navbar container">
-                        <div class="container-fluid">
+                        <div class="container2">
                           <div class="navbar-header">
                             <button type="button  text-white" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                               <span class="sr-only"></span>
@@ -66,7 +68,7 @@
                               <li><a href="#">Команда</a></li>
                               <li><a href="#">Контакты</a></li>
                             </ul>
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right social-nav">
                                 <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                                 <li><a href="#"><span class="fa fa-telegram"></span></a></li>
                                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -481,6 +483,7 @@
                         </div>
                         
                         <div class="tab-content carousel-inner">  
+                            <!--First tab-->
                             <div id="all" class="item tab-pane fade in active">
                                 <div class="carousel-inner">
                                     <div class="row">
@@ -592,64 +595,121 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div><!--first-tab--> 
+                            </div>
                         
                             <!--Second tab-->
-                            <div id="love" class="item tab-pane fade">
+                            <div id="love" class="item tab-pane fade in active">
                                 <div class="carousel-inner">
-                                    <div class="col-md-4">
-                                        <a href="#" class="news">
-                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
-                                            <div class="background"></div>
-                                            <div class="additory-module">
-                                                <div>
-                                                    <span class="tag">Любовь</span>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="news">
+                                                <div class="thumb" style="background-image:url(img/news/worst_places.png)" >
+                                                    <div class="background"></div>
+                                                    <span class="category">Любовь</span>
+                                                    <p class="date">28 марта 2018</p>
                                                 </div>
-                                                <p class="date">12 марта</p>
-                                                <h2>Нужно ли выяснять отношения?</h2>
-                                                <div class="with-animation">
-                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+
+                                                <div class="additory-module">
+                                                    <h3>Нужно ли выяснять отношения?</h3>
+                                                    <div class="with-animation excerpt">
+                                                        <p>Я тебе расскажу о том, что с ним происходит и как тебе с этим справиться...</p>
+                                                    </div>
+                                                    <span class="article-button"><a href="#" target="blanc">Читать полностью</a></span>
                                                 </div>
-                                                <span class="article-button">Узнать о курсе</span>
                                             </div>
-                                        </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="news">
+                                                <div class="thumb" style="background-image:url(img/news/destiny.png)" >
+                                                    <div class="background"></div>
+                                                    <span class="category">Личное</span>
+                                                    <p class="date">28 марта 2018</p>
+                                                </div>
+
+                                                <div class="additory-module">
+                                                    <h3>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h3>
+                                                    <div class="with-animation excerpt">
+                                                        <p>Я тебе расскажу о том, что с ним происходит и как тебе с этим справиться...</p>
+                                                    </div>
+                                                    <span class="article-button"><a href="#" target="blanc">Читать полностью</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="news">
+                                                <div class="thumb" style="background-image:url(img/news/nosex.png)" >
+                                                    <div class="background"></div>
+                                                    <span class="category">Секс</span>
+                                                    <p class="date">28 марта 2018</p>
+                                                </div>
+
+                                                <div class="additory-module">
+                                                    <h3>Почему муж избегает секса?</h3>
+                                                    <div class="with-animation excerpt">
+                                                        <p>Только от одного слова "конфликт" уже нервно подергивается веко. Даже произнести его на одном...</p>
+                                                    </div>
+                                                    <span class="article-button"><a href="#" target="blanc">Читать полностью</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <a href="#" class="news">
-                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
-                                            <div class="background"></div>
-                                            <div class="additory-module">
-                                                <div>
-                                                    <span class="tag">Личное</span>
+                                    
+                                    
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="news">
+                                                <div class="thumb" style="background-image:url(img/news/worst_places.png)" >
+                                                    <div class="background"></div>
+                                                    <span class="category">Любовь</span>
+                                                    <p class="date">28 марта 2018</p>
                                                 </div>
-                                                <p class="date">12 марта</p>
-                                                <h2>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h2>
-                                                <div class="with-animation">
-                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+
+                                                <div class="additory-module">
+                                                    <h3>Нужно ли выяснять отношения?</h3>
+                                                    <div class="with-animation excerpt">
+                                                        <p>Я тебе расскажу о том, что с ним происходит и как тебе с этим справиться...</p>
+                                                    </div>
+                                                    <span class="article-button"><a href="#" target="blanc">Читать полностью</a></span>
                                                 </div>
-                                                <span class="article-button">Узнать о курсе</span>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="#" class="news">
-                                            <img src="img/image.png" alt="Счастливые отношения глазами мужчин, Изображение">
-                                            <div class="background"></div>
-                                            <div class="additory-module">
-                                                <div>
-                                                    <span class="tag">Секс</span>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="news">
+                                                <div class="thumb" style="background-image:url(img/news/destiny.png)" >
+                                                    <div class="background"></div>
+                                                    <span class="category">Личное</span>
+                                                    <p class="date">28 марта 2018</p>
                                                 </div>
-                                                <p class="date">12 марта</p>
-                                                <h2>Почему муж избегает секса?</h2>
-                                                <div class="with-animation">
-                                                    <p>Участниц: <span>0</span><span>3</span><span>7</span><span>8</span></p>
+
+                                                <div class="additory-module">
+                                                    <h3>Как в точности повторить судьбу мамы и не разочаровать тетю Свету</h3>
+                                                    <div class="with-animation excerpt">
+                                                        <p>Я тебе расскажу о том, что с ним происходит и как тебе с этим справиться...</p>
+                                                    </div>
+                                                    <span class="article-button"><a href="#" target="blanc">Читать полностью</a></span>
                                                 </div>
-                                                <span class="article-button">Узнать о курсе</span>
                                             </div>
-                                        </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="news">
+                                                <div class="thumb" style="background-image:url(img/news/nosex.png)" >
+                                                    <div class="background"></div>
+                                                    <span class="category">Секс</span>
+                                                    <p class="date">28 марта 2018</p>
+                                                </div>
+
+                                                <div class="additory-module">
+                                                    <h3>Почему муж избегает секса?</h3>
+                                                    <div class="with-animation excerpt">
+                                                        <p>Только от одного слова "конфликт" уже нервно подергивается веко. Даже произнести его на одном...</p>
+                                                    </div>
+                                                    <span class="article-button"><a href="#" target="blanc">Читать полностью</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div><!--first-tab-->
+                            </div>
                         
                         
                         </div><!--tab content-->
