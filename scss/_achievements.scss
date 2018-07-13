@@ -7,14 +7,14 @@
         position: relative;
         overflow: hidden;
         border-radius: 8px;
-        height: 296px;
+        height: 276px;
         .additory-module {
             display: table;
             width: 100%;
             position: absolute;
             @include gradient();
             div {
-                height: 296px;
+                height: 280px;
                 text-align: center;
                 padding-top: 50px;
                 img {
@@ -41,7 +41,7 @@
             }
         }
         .background {      
-            height: 100%;
+            width: 100%;
             top: 0px;
             left: 0px;
             z-index: 0;

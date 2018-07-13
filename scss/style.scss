@@ -28,6 +28,11 @@
 .font-bold{
     font-family: MontserratBold;
 }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 @import "_mixins.scss";
 @import "_variables.scss";
 @import "_module.scss";

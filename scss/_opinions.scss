@@ -3,6 +3,12 @@
         .display{
             height: 300px;
             padding: 30px;
+            @media($mob-width){
+                &{
+                    height:auto;
+                }
+            }
+            
         }
         .arrow{
             position: absolute;
@@ -16,15 +22,37 @@
             font-size: 35px;
             padding: 5px 24px;
             @include transition(all .5s ease-in-out);
+            @media($mob-width){
+                &{
+                    background-color:transparent;
+                    color:#1c2025;
+                    padding: 0;
+                }
+            }
             &.right-arrow{
                 right:-90px;
+                @media($mob-width){
+                    &{
+                        right:20px;
+                    }
+                }
             }
             &.left-arrow{
                 left:-90px;
+                @media($mob-width){
+                    &{
+                        left:20px;
+                    }
+                }
             }
             &:hover{
                 background-color:#304ffe;
                 box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.4);
+                @media($mob-width){
+                    &{
+                        background-color:transparent;
+                    }
+                }
             }
         }
         .img{
@@ -46,6 +74,12 @@
                 @include transform(translate(0%));
                 width:100%;
                 height:auto;
+                @media($mob-width){
+                    &{
+                        margin:auto;
+                        padding: 20px;
+                    }
+                }
             }
             .text{
                 color: #343656;

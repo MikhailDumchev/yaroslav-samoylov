@@ -1,5 +1,9 @@
 footer {
     background-color: $background;
+    .bottom-row{
+        background: #13131d;
+        display: -webkit-box;
+    }
     .with-margin {
         margin: 30px auto;
         .socials{

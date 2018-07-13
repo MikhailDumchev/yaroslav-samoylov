@@ -58,96 +58,104 @@
                 .tab-pane{
                     .carousel-inner{
                         .row{
-                            margin-bottom:30px;
-                            .news {
-                                background: white;
-                                /*display: block;*/
-                                border-radius: 10px;
-                                overflow: hidden;
-                                height: 600px;
-                                display: flex;
-                                flex-direction: column;
-                                & > div{
-                                    flex:1;
-                                }
-                                .background{
-                                    background-image: linear-gradient(to top, #1c1e26 0%, #343656 99%, #343656 100%);
-                                    opacity: 0.85;
-                                    position:absolute;
-                                    top:0;left:0;right:0;bottom:0;
-                                }
-                                .thumb{
-                                    position:relative;
-                                    height: 300px;
-                                    background-repeat: no-repeat;
-                                    background-position: top center;
-                                    background-size: cover;
-                                    -webkit-filter: grayscale(1);
-                                    filter: grayscale(1);
-                                    @include transition(filter .5s ease-in-out);
-                                    &:hover{
-                                        filter: grayscale(0);
+                            
+                            .article-annotation{
+                                margin-bottom:30px;
+                                .news {
+                                    background: white;
+                                    /*display: block;*/
+                                    border-radius: 10px;
+                                    overflow: hidden;
+                                    height: 600px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    @media($mob-width){
+                                        &{
+                                            height:auto;
+                                        }
                                     }
-                                    .category{
-                                        position: absolute;
-                                        top:30px;
-                                        display: inline-block;
-                                        margin: auto;
-                                        color:white;
-                                        text-transform: uppercase;
-                                        right: 0;
-                                        left: 0;
-                                        text-align: center;
+                                    & > div{
+                                        flex:1;
                                     }
-                                    .date{
-                                        position: absolute;
-                                        left: 0;
-                                        right: 0;
-                                        bottom: 20px;
-                                        text-align: center;
-                                        color: #acadc2;
-                                        font-size: 14px;
+                                    .background{
+                                        background-image: linear-gradient(to top, #1c1e26 0%, #343656 99%, #343656 100%);
+                                        opacity: 0.85;
+                                        position:absolute;
+                                        top:0;left:0;right:0;bottom:0;
                                     }
-                                }
-
-                                .additory-module {
-                                    padding:20px;
-                                    h3{
-                                        color: #343656;                              
-                                        font-size: 20px;
-                                        font-weight: 700;
-                                        line-height: 32px;
-                                        margin: 0;
-                                    }
-                                    .excerpt{
-                                        color: #717392;
-                                        font-family: MontserratRegular;
-                                        font-size: 16px;
-                                        font-weight: 400;
-                                        line-height: 28px;
-                                        letter-spacing: 0.16px;
-                                        margin: 20px 0;
-                                    }
-                                    .article-button{
-                                        color: #304ffe;
-                                        font-family: MontserratSemiBold;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        text-transform: uppercase;
-                                        position: absolute;
-                                        bottom: 20px;
-                                    }
-                                    div {
-                                        .tag {
+                                    .thumb{
+                                        position:relative;
+                                        height: 300px;
+                                        background-repeat: no-repeat;
+                                        background-position: top center;
+                                        background-size: cover;
+                                        -webkit-filter: grayscale(1);
+                                        filter: grayscale(1);
+                                        @include transition(filter .5s ease-in-out);
+                                        &:hover{
+                                            filter: grayscale(0);
+                                        }
+                                        .category{
+                                            position: absolute;
+                                            top:30px;
                                             display: inline-block;
-                                            min-width: 86px;
-                                            color: $textColor;
-                                            font-size: 15px;
-                                            font-weight: 500;
-                                            background-color: $white;
-                                            padding: 4px 8px;
-                                            border-radius: 28px;
+                                            margin: auto;
+                                            color:white;
+                                            text-transform: uppercase;
+                                            right: 0;
+                                            left: 0;
                                             text-align: center;
+                                        }
+                                        .date{
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            bottom: 20px;
+                                            text-align: center;
+                                            color: #acadc2;
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .additory-module {
+                                        padding:20px;
+                                        h3{
+                                            color: #343656;                              
+                                            font-size: 20px;
+                                            font-weight: 700;
+                                            line-height: 32px;
+                                            margin: 0;
+                                        }
+                                        .excerpt{
+                                            color: #717392;
+                                            font-family: MontserratRegular;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            line-height: 28px;
+                                            letter-spacing: 0.16px;
+                                            margin: 20px 0;
+                                        }
+                                        .article-button{
+                                            color: #304ffe;
+                                            font-family: MontserratSemiBold;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            text-transform: uppercase;
+                                            position: absolute;
+                                            bottom: 20px;
+                                        }
+                                        div {
+                                            .tag {
+                                                display: inline-block;
+                                                min-width: 86px;
+                                                color: $textColor;
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                                background-color: $white;
+                                                padding: 4px 8px;
+                                                border-radius: 28px;
+                                                text-align: center;
+                                            }
                                         }
                                     }
                                 }

@@ -3,20 +3,39 @@ header {
     font-family: "Montserrat", sans-serif;
     padding-top: 104px;
     @include background-image('/header/ys-header.png',right bottom,contain,$darkBlueTransparent);
+    @media($mob-width){
+        &{
+            padding-top: 0;
+        }
+    }
     
     a{
         color:$textColor;
     }
-    .container-fluid{
+    .container-fluid.mobile-menu{
         position: absolute;
         bottom: 0;
         margin: auto;
         right: 0;
         left: 0;
         background-color: #f7f8fb;
+        z-index:9999;
+        @media($mob-width){
+            &{
+                position:fixed;
+                top:0px;
+                bottom:unset;
+            }
+            
+        }
         
         .navbar{
             margin-top: 20px;
+            @media($mob-width){
+                &{
+                    margin:0;
+                }
+            }
             .navbar-header{
                 margin-left:0;
                 margin-right:0;
@@ -78,6 +97,11 @@ header {
         font-weight: 800;
         text-transform: uppercase;
         margin: 0px auto 30px;
+        @media($mob-width){
+            &{
+                font-size: 30px;
+            }
+        }
     }
     p {
         font-size: 14px;

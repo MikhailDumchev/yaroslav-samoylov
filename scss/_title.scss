@@ -6,6 +6,12 @@
     text-transform:uppercase;
     letter-spacing: 1px;
     font-family: $text-bolder;
+    @media($mob-width){
+        &{
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
     span {
         display: block;
     }
