@@ -12,67 +12,87 @@ header {
     a{
         color:$textColor;
     }
-    .container-fluid.mobile-menu{
-        position: absolute;
-        bottom: 0;
-        margin: auto;
-        right: 0;
-        left: 0;
-        background-color: #f7f8fb;
-        z-index:9999;
+    &.module .internal-module{
         @media($mob-width){
             &{
-                position:fixed;
-                top:0px;
-                bottom:unset;
+                display: block;
+                padding: 80px 0 60px;
             }
-            
         }
-        
-        .navbar{
-            margin-top: 20px;
-            @media($mob-width){
-                &{
-                    margin:0;
-                }
-            }
-            .navbar-header{
-                margin-left:0;
-                margin-right:0;
-                .navbar-toggle{
-                    .icon-bar {
-                        background: #a8aaba;
+        & > .container{
+            height:100vh;
+        }
+        .container-fluid{
+            &.mobile-menu{
+                position: absolute;
+                bottom: 0;
+                margin: auto;
+                right: 0;
+                left: 0;
+                background-color: #f7f8fb;
+                z-index:9999;
+                @media($mob-width){
+                    &{
+                        position:fixed;
+                        top:0px;
+                        bottom:unset;
                     }
                 }
-            }
 
-/*            .container-fluid{
-                width: 100%;
-                .navbar-header{
-                    button{
-                        .icon-bar{
-                            background-color:$white;
-                        }
-                    }
-                }
-                #navbar{
-                    @media ($mob-width){
+                .navbar{
+                    margin-top: 20px;
+                    @media($mob-width){
                         &{
-                            background: rgba(35, 37, 43, 0.95);
+                            margin:0;
                         }
                     }
-                    .navbar-nav>li{
-                        text-align:center;
-                        &>a{
-                            
-                            background-color: inherit;
+                    .navbar-header{
+                        margin-left:0;
+                        margin-right:0;
+                        .navbar-brand{
+                            img{
+                                display: none;
+                                @media($mob-width){
+                                    display:initial;
+                                }
+                            }
+                        }
+                        .navbar-toggle{
+                            margin-right:0;
+                            .icon-bar {
+                                background: #a8aaba;
+                            }
+                        }
+                    }
+                    .navbar-footer{
+                        .social-nav{
+                            @media($mob-width){
+                                display:flex;
+                                border-top: 1px solid;
+                            }
+                        }
+                        .navbar-nav{
+                            @media($mob-width){
+                                border-top: 1px solid;
+                                text-align: -webkit-center;
+                            }
+                            li{
+                                &:before{
+                                    @media($mob-width){
+                                        background:transparent;
+                                    }
+                                }
+                                a{
+                                    @media($mob-width){
+                                        text-transform:uppercase;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-            }*/
-
+            }
         }
-        
     }
     .with-video {
         position: absolute;
@@ -91,7 +111,7 @@ header {
             transform: translate(-50%, -50%);
         }
     }
-    h1 {
+    h1{
         color: $white;
         font-size: 51px;
         font-weight: 800;

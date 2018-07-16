@@ -61,6 +61,7 @@
                             
                             .article-annotation{
                                 margin-bottom:30px;
+                                
                                 .news {
                                     background: white;
                                     /*display: block;*/
@@ -69,6 +70,10 @@
                                     height: 600px;
                                     display: flex;
                                     flex-direction: column;
+                                    &:hover .thumb{
+                                        -webkit-filter: grayscale(0);
+                                        filter: grayscale(0);
+                                    }
                                     @media($mob-width){
                                         &{
                                             height:auto;
@@ -92,9 +97,7 @@
                                         -webkit-filter: grayscale(1);
                                         filter: grayscale(1);
                                         @include transition(filter .5s ease-in-out);
-                                        &:hover{
-                                            filter: grayscale(0);
-                                        }
+
                                         .category{
                                             position: absolute;
                                             top:30px;
@@ -159,6 +162,7 @@
                                         }
                                     }
                                 }
+                                
                             }
                         }
                     }

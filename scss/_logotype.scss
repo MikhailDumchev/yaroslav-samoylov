@@ -4,4 +4,9 @@
     top: 60px;
     left: 0px;
     z-index: 5;
+    @media($mob-width){
+        &{
+            display:none;
+        }
+    }
 }
