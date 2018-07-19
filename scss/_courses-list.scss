@@ -20,6 +20,9 @@ $animationDuration: 0.2s;
             img{
                 filter:grayscale(0%);
             }
+            .course-img{
+                filter:grayscale(0%);
+            }
             .background{
                 opacity:0.8;
             }
@@ -59,6 +62,19 @@ $animationDuration: 0.2s;
             -webkit-filter: grayscale(1);
             filter: grayscale(1);
         }
+        .course-img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+        
         .background {
             position: absolute;
             top: 0px;

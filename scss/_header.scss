@@ -20,7 +20,11 @@ header {
             }
         }
         & > .container{
-            height:100vh;
+            @media($mob-width){
+                &{
+                    height:100vh;
+                }
+            }
         }
         .container-fluid{
             &.mobile-menu{
