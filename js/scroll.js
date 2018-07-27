@@ -4,23 +4,21 @@ $(document).ready(function(){
     
     
     window.onscroll = function() {
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+
+        if($target < scrolled) $menu.css('position','fixed').css("top","0").css("bottom","unset");
+        else $menu.css('position','absolute').css("bottom","0").css("top","unset");
+
+    };
     
-    if($target < scrolled) $menu.css('position','fixed').css("top","0").css("bottom","unset");
-    else $menu.css('position','absolute').css("bottom","0").css("top","unset");
-    
-  }
-//    $(".carousel-controls").on("click",function(){
-////        var scope = $(".tab-content")[0];
-////        var tabs = $(scope).find(".tab-pane").removeClass("in active");
-//        setTimeout(function(){
-//            var id = $(".mobile-cat-navigation").find(".active").data("id");
-//            console.log(id);
-//        },1500);
-//        
-//        
-//        
-//    })
+    var onresize = function(e) {
+        width = e.target.outerWidth;
+        height = e.target.outerHeight;
+        console.log("width"+width);
+        if(width <= 768 ) $menu.addClass("mobile-size-menu");
+        else $menu.removeClass("mobile-size-menu");
+    }
+    window.addEventListener("resize", onresize);
     
     
 })
